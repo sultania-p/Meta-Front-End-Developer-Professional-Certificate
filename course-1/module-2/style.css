@@ -1,0 +1,97 @@
+h1 {
+  color: purple;
+}
+
+p {
+  color: maroon;
+}
+
+#header1 {
+  color: green;
+}
+
+#para1 {
+  color: darkslategray;
+}
+
+#para2 {
+  color: black;
+}
+
+#para3 {
+  color: blueviolet;
+  background-color: cornsilk;
+}
+
+#latest {
+  color: darkslateblue;
+}
+
+.navigation {
+  margin: 2px;
+}
+/* 
+#blog div h1 {
+  color: red;
+} */
+
+/* only color h1 element with text Latest News*/
+#blog > h1 {
+  color: blue;
+}
+
+a:hover {
+  color: orange;
+}
+
+#css > p {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+#css div p {
+  color: hsl(25, 100%, 50%);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: underline blue solid 2px;
+}
+
+#box-model p {
+  color: blue;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px;
+  border: 5px solid green;
+  margin: 2px;
+}
+
+#middle {
+  display: block;
+}
+
+#alignment {
+  text-align: justify;
+}
+
+.parent {
+  border: 4px solid red;
+  margin: auto;
+}
+
+/* .child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+  margin: auto;
+} */
+
+.child {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
