@@ -1,4 +1,4 @@
-# Introduction to Front-End Development
+# Course 1: Introduction to Front-End Development
 
 Welcome to **Introduction to Front-End Development**, the first course in the Meta Front-End Developer program on Coursera.
 
