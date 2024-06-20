@@ -29,7 +29,6 @@ function letterFinder(word, match) {
   }
 }
 letterFinder("test", "t");
-*/
 // Objects
 var storeManager = {
   experience: 10,
@@ -94,3 +93,79 @@ var car = {
 for (let i = 0; i < arrOfKeys.length; i++) {
   console.log("The car's", arrOfKeys[i], "is", car[arrOfKeys[i]]);
 }
+
+
+// array are objects - push and pop methods
+function fruitBasket(arrOfKeys) {
+  var fruits = [];
+  fruits.push("Apple");
+  fruits.push("Oranges");
+  for (let i = 0; i < arrOfKeys.length; i++) {
+    fruits.push(arrOfKeys[i]);
+  }
+  return fruits;
+}
+var arrOfKeys = ["Kiwi", "Mango", "Bananas", "Lichi", "Guava"];
+fruits = fruitBasket(arrOfKeys);
+console.log(fruits);
+
+// fruits.pop();
+// console.log(fruits);
+
+// Math Object Sheet
+console.log(Math.PI);
+console.log(Math.ceil(10.38));
+console.log(Math.floor(34.23));
+console.log(Math.round(10.57));
+console.log(Math.max(1, 2, 3, 4, 5));
+console.log(Math.min(12, 34, 54, 1, 76));
+
+var random = Math.random(); // lies between 0 and 0.99
+console.log(random);
+console.log(10 * random);
+
+// Iterable - Arrays and Strings - String Manipulation
+// ON ARRAY
+var veggies = ["Onion", "Parsley", "Potato"];
+for (let veg = 0; veg < veggies.length; veg++) {
+  console.log(veggies[veg]);
+}
+
+//ON STRING
+var greeting = "Hello";
+for (let greet = 0; greet < greeting.length; greet++) {
+  console.log(greeting[greet]);
+}
+
+var greet = "Howdy";
+var user = "Lisa";
+console.log(greet + "", user);
+console.log(greet.concat(" ", user));
+
+// String Functions
+var word = "Morning";
+console.log(word.length);
+console.log(word.charAt(2));
+console.log(word.indexOf("r"));
+console.log(word.lastIndexOf("n"));
+
+console.log("What-a-lovely-day".split("-"));
+console.log(word.toUpperCase());
+console.log(word.toLowerCase());
+*/
+// Exercise--
+var clothes = [];
+clothes.push("Jeans");
+clothes.push("T-shirt");
+clothes.push("Shirt");
+clothes.push("Kurta");
+clothes.push("Shorts");
+clothes.pop();
+clothes.push("Cargo Jeans");
+console.log(clothes[2]);
+
+var favCar = {};
+favCar.color = "Blue";
+favCar.convertible = true; // using dot notation
+favCar["priceUSD"] = 45000; // using bracket notation
+console.log(favCar);
