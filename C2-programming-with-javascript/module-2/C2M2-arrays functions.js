@@ -152,7 +152,7 @@ console.log(word.lastIndexOf("n"));
 console.log("What-a-lovely-day".split("-"));
 console.log(word.toUpperCase());
 console.log(word.toLowerCase());
-*/
+
 // Exercise--
 var clothes = [];
 clothes.push("Jeans");
@@ -169,3 +169,155 @@ favCar.color = "Blue";
 favCar.convertible = true; // using dot notation
 favCar["priceUSD"] = 45000; // using bracket notation
 console.log(favCar);
+// Object Methods
+var car = {};
+car.color = "Red";
+car.mileage = 50;
+car["licensePlate"] = "LSN 123";
+car["priceUSD"] = 50000;
+console.log(car);
+
+// add Method - Property of an object
+car.turnTheKey = function (brand) {
+    console.log("The car of", brand, "brand is running");
+};
+car.lightsOn = function (typeLight) {
+    console.log("The car's", typeLight, "is on.");
+};
+console.log(car);
+car.turnTheKey("Toyota");
+car.lightsOn("headlight");
+
+// typeof - returns data type of input parameter
+console.log("--------");
+console.log(typeof 10.2);
+console.log(typeof "This is my JavScript code..");
+console.log(typeof { type: "Object" });
+console.log(
+    typeof function () {
+        console.log("function typeof");
+    }
+);
+
+var num = 1;
+console.log(num.toString());
+
+var str = "10";
+console.log(typeof str);
+console.log(Number(str));
+console.log(typeof Number(str));
+console.log(Number.isInteger(10.23));
+
+
+// Error Handling - Syntax Error, Reference Error and Type Error
+// throw Try and Catch
+//console.log(a + b);
+console.log("This line is executed...");
+
+// throw new ReferenceError(); - Throw an error forcefully
+console.log("-----Using try catch capturing error...");
+try {
+  console.log(a + b);
+} catch (err) {
+  console.log(err);
+  console.log("There was an error...");
+  console.log("Error was logged in error log..");
+}
+console.log("The program did not stop");
+
+console.log("-----Using throw exception...");
+try {
+  throw new SyntaxError();
+} catch (err) {
+  console.log(err);
+  console.log("Error was captured and logged...");
+}
+console.log("Program did not terminate");
+
+console.log("----Using TyepError...");
+try {
+  var str = "Hello";
+  str.pop();
+} catch (err) {
+  console.log(err);
+  console.log("TypeError was captured in error log..");
+}
+
+try {
+  console.log((10).toString(2));
+  (10).toString(100);
+} catch (err) {
+  console.log(err);
+  console.log("RangeError was captured in error log..");
+}
+
+// Empty Values - Undefined, NULL and Empty
+// Undefined is retruned by default by a function unless explicitly returned something..
+var word = "Mango";
+console.log(word.match(/a/));
+
+console.log("Jane Smitch");
+
+var noise;
+console.log(noise); // If value is unassigned during/after declaration the Undefined is assigned by default
+noise = "Scream...";
+console.log(noise);
+
+// another example of Undefined
+var item = {
+  color: "Blue",
+  priceUSD: 10,
+  name: "Toy",
+};
+console.log(item.Color);
+
+// Empty String - using "" or ''
+var emptyString = "";
+console.log(emptyString);
+
+// Error prevention exercise
+function addTwoNums(a, b) {
+  try {
+    if (typeof a != "number") {
+      throw new ReferenceError("the first argument is not a number");
+    } else if (typeof b != "number") {
+      throw new ReferenceError("The second argument is not a number");
+    } else {
+      console.log(a + b);
+  }
+} catch (err) {
+  console.log("Error!", err);
+}
+}
+addTwoNums(5, "5");
+console.log("It still works....");
+*/
+
+// Defensive Programming
+function letterFinder(word, match) {
+  var condition1 = typeof word == "string" && word.length >= 2;
+  var condition2 = typeof match == "string" && match.length == 1;
+
+  if (condition1 && condition2) {
+    for (let i = 0; i < word.length; i++) {
+      if (word[i] == match) {
+        console.log("Found the", match, "at", i);
+      } else {
+        console.log("---No match found at", i);
+      }
+    }
+  } else {
+    console.log("Please pass correct arguments to the functions..!");
+  }
+}
+console.log("--Failing Test....");
+letterFinder(1, 5);
+console.log("--Failing Test....");
+letterFinder("Elephant", "ep");
+console.log("--Passing Test....");
+letterFinder("cat", "c");
+
+var str = "Hello";
+console.log(str.match("jello"));
+
+Number(5).toPrecision(300);
