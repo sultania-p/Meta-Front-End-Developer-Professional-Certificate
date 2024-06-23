@@ -1,47 +1,66 @@
-# Course 1: Introduction to Front-End Development
+# Meta Front-End Developer Professional Certificate
 
-Welcome to **Introduction to Front-End Development**, the first course in the Meta Front-End Developer program on Coursera.
+Get started in the world of coding and build websites as a career! This certificate, designed by the software engineering experts at Meta—the creators of Facebook and Instagram, will prepare you for a career as a front-end developer.
 
-## Course Overview
+## Program Overview
 
-This beginner course covers essential front-end technologies and frameworks.
+In this program, I will learn:
 
-### What You Will Learn
+- How to code and build interactive web pages using HTML5, CSS, and JavaScript.
+- In-demand design skills to create professional page layouts using industry-standard tools such as Bootstrap, React, and Figma.
+- GitHub repositories for version control, CMS, and how to edit images using Figma.
+- How to prepare for technical interviews for front-end developer roles.
 
-- Describe the front-end developer role
-- Explain core technologies: HTML, CSS, JavaScript
-- Create a simple webpage with HTML
-- Control webpage appearance with CSS
-- Introduction to React and popular UI frameworks
-- Create a responsive webpage using HTML and Bootstrap
+By the end of the program, I will complete a real-world project, creating your own front-end web application.
 
-### Course Content
+## Applied Learning Projects
 
-- **Videos**: 18
-- **Readings**: 11
-- **Practice Quizzes**: 4
+Throughout the program, I will engage in hands-on activities to practice and implement what you are learning. At the end of each course, I will complete a project to test your new skills. Some of the key projects include:
 
-### Modules
+- **Edit Your Bio Page**: Using HTML5, CSS, and UI frameworks.
+- **Manage a Project in GitHub**: Using version control in Git, Git repositories, and the Linux Terminal.
+- **Build a Static Version of an Application**: Applying your understanding of React, frameworks, routing, hooks, bundlers, and data fetching.
 
-1. **Get Started with Web Development**
+The program concludes with a Capstone project, bringing your new skills together to create a front-end web application.
 
-   - Web developer roles, HTML, CSS, JavaScript
-   - Internet basics: servers, browsers, hosting
+## Courses in the Program
 
-2. **Core Web Technologies**
+### 1. Introduction to Front-End Development
 
-   - Internet protocols, HTTP, developer tools
+Learn the basics of front-end development and the core technologies of HTML, CSS, and JavaScript.
 
-3. **Frameworks and Tools**
-   - Frameworks, APIs, IDE setup
+### 2. Programming with JavaScript
 
-### Final Project
+Deep dive into JavaScript programming to build dynamic and interactive web pages.
 
-Create a responsive webpage using HTML, CSS and Bootstrap.
+### 3. Version Control
 
-## Prerequisites
+Master version control with Git and GitHub to manage your code efficiently.
 
-- No prior web development experience required
-- Basic internet navigation skills
+### 4. HTML and CSS in Depth
 
-For more details, visit the [course page on Coursera](https://www.coursera.org/learn/introduction-to-front-end-development).
+Explore advanced HTML and CSS techniques for professional web development.
+
+### 5. React Basics
+
+Get introduced to React, a powerful library for building user interfaces.
+
+### 6. Advanced React
+
+Expand your React knowledge with advanced concepts and techniques.
+
+### 7. Principles of UX/UI Design
+
+Learn the principles of user experience (UX) and user interface (UI) design.
+
+### 8. Front-End Developer Capstone
+
+Apply everything you've learned in a comprehensive capstone project.
+
+### 9. Coding Interview Preparation
+
+Prepare for technical interviews with focused training and practice.
+
+## Additional Information
+
+For more details, visit the [program page on Coursera](https://www.coursera.org/professional-certificates/meta-front-end-developer).
