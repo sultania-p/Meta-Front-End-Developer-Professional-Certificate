@@ -175,7 +175,6 @@ console.log(apple);
 
 console.log("abcd".match(/d/));
 console.log("abcd".match(/b/));
-*/
 
 // For Array, FUnctions and RegExp we should we the object literal instead such as  [], () {}, /()/
 // For other built in types we can use the constructor directly
@@ -187,9 +186,9 @@ console.log(date.getDate());
 
 // Prototyping Object
 var bird = {
-  hasWings: true,
-  canFly: true,
-  hasFeatheres: true,
+    hasWings: true,
+    canFly: true,
+    hasFeatheres: true,
 };
 
 var eagle1 = Object.create(bird); // it will create a protype of Bird object
@@ -203,3 +202,60 @@ penguin1.canFly = false; //override the only penguin1 object property
 console.log("penguin1 has wings:", penguin1.hasWings);
 console.log("penguin1 can fly:", penguin1.canFly);
 console.log("penguin1 has feathers:", penguin1.hasFeatheres);
+*/
+
+// creating classes and using constructor
+// constructor is used to create properties of the future objects of the class created
+// this -> refers to future object instance of Train class lets say - Mail, Express, Cargo etc
+class Train {
+  constructor(color, lightsOn, type) {
+    this.color = color;
+    this.lightsOn = lightsOn;
+    this.type = type;
+  }
+
+  lightDisplay(lightsOn) {
+    if (lightsOn == true) {
+      return "show lights";
+    } else {
+      return "does not have lights on";
+    }
+  }
+
+  toggleLights() {
+    this.lightsOn = !this.lightsOn;
+  }
+
+  lightStatus() {
+    console.log("Lights on?", this.lightsOn);
+  }
+
+  getSelf() {
+    console.log(this);
+  }
+
+  getPrototype() {
+    var proto = Object.getPrototypeOf(this);
+    console.log(proto);
+  }
+}
+
+var myFirstTrain = new Train("Red", false, "Express");
+console.log(
+  "The train is of " +
+    myFirstTrain.color +
+    " color and of " +
+    myFirstTrain.type +
+    " type and " +
+    myFirstTrain.lightDisplay(myFirstTrain.lightsOn)
+);
+
+var mySecondTrain = new Train("Blue", true, "Superfast");
+mySecondTrain.toggleLights(); // toggle the value to false and assigned to the instance object property
+mySecondTrain.lightStatus();
+mySecondTrain.getSelf();
+mySecondTrain.getPrototype();
+console.log(mySecondTrain.lightsOn);
+
+// Class syntax - > keeps object instance data seperate (property) to Shared objects functionality (like functions)
+// Using Polymorphism - Creating subclasses using Super class or Prent Class and extending property and overriding the inherited behavior
